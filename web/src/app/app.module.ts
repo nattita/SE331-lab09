@@ -14,14 +14,14 @@ import {StudentRoutingModule} from './students/student-routing.module';
 import {StudentsDataDBService} from './service/students-data-db.service';
 import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import {StudentsDataServerService} from './service/students-data-server.service';
-
+import {CourseListComponent} from "./students/course-list/course-list.component";
 
 @NgModule({
   declarations: [AppComponent,
     StudentsComponent,
     StudentsAddComponent,
     StudentsViewComponent,
-    MenuComponent, FileNotFoundComponent],
+    MenuComponent, FileNotFoundComponent, CourseListComponent],
   imports: [BrowserModule, FormsModule, HttpModule,
     StudentRoutingModule, AppRoutingModule],
   bootstrap: [AppComponent],
